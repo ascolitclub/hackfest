@@ -1,4 +1,5 @@
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
+import Navbar from "../Navbar";
 
 type Props = {
   hideHeader?: boolean;
@@ -12,7 +13,7 @@ const DefaultLayout = (props: Props) => {
 
   return (
     <>
-      navbar
+      <Navbar hideNavbar={false} />
       <main className={cn(`relative min-h-screen`, className)}>{children}</main>
       footer
     </>
