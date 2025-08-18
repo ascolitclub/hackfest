@@ -13,7 +13,6 @@ import {
 import { getMenu } from "@/data/nav";
 import MenuItem from "./MenuItem";
 import { Button } from "../ui/Button";
-import Link from "next/link";
 
 interface Props {
   hideNavbar: boolean;
@@ -99,10 +98,8 @@ function Navbar({ hideNavbar, stickyNavbar = true }: Props) {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 opacity-0 animate-fade-in !scale-100 delay-300">
-              <Button type="default" asChild>
-                <Link href="/">Hello</Link>
-              </Button>
+            <div className="flex items-center gap-2 animate-fade-in !scale-100 delay-300">
+              <Button variant="default">Hello</Button>
             </div>
           </div>
         </nav>
