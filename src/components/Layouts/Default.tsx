@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
-import Navbar from "../Navbar";
+import { FooterSection } from "../Footer";
+import { Navbar } from "../Navbar/Navbar";
 
 type Props = {
   hideHeader?: boolean;
@@ -9,13 +10,13 @@ type Props = {
 };
 
 const DefaultLayout = (props: Props) => {
-  const { hideHeader, hideFooter, className, children } = props;
+  const { className, children } = props;
 
   return (
     <>
-      <Navbar hideNavbar={false} />
+      <Navbar />
       <main className={cn(`relative min-h-screen`, className)}>{children}</main>
-      footer
+      <FooterSection />
     </>
   );
 };
