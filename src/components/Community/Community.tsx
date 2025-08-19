@@ -19,12 +19,12 @@ export function CommunitySection() {
           </p>
 
           <CurvedLine
-            className="text-primary hidden lg:block absolute top-[120px] right-[500px]"
+            className="text-primary hidden lg:block absolute top-[120px] right-[10px]"
             size={120}
           />
 
           <Pointer
-            className="dark:text-white text-muted-foreground hidden lg:block absolute top-[120px] left-[500px]"
+            className="dark:text-white text-muted-foreground hidden lg:block absolute top-[120px] left-[10px]"
             size={120}
           />
         </div>

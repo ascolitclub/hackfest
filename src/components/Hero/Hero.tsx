@@ -3,17 +3,15 @@ import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
-import { CrossLines } from "../Lines/CrossLines";
 import { HashTag } from "../Doodles/HashTag";
 import { Spiral } from "../Doodles/Spiral";
-import { Line } from "../Doodles/Line";
 // import { TextEffect } from "@/components/motion";
 // import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
 
 export function HeroSection() {
   return (
     <>
-      <main className="relative overflow-hidden">
+      <main id="hero" className="relative overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"

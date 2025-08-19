@@ -18,42 +18,68 @@ import { BorderBeam } from "@/components/magic-ui/border-beam";
 import { CrossLines } from "../Lines/CrossLines";
 
 export default function FAQ_AD() {
-  type ImageKey = "item-1" | "item-2" | "item-3" | "item-4";
-  const [activeItem, setActiveItem] = useState<ImageKey>("item-1");
+  const faqItems: {
+    key: string;
+    question: string;
+    answer: string;
+    icon: React.ReactNode;
+    image: string;
+    alt: string;
+  }[] = [
+    {
+      key: "item-1",
+      question: "What is Ascol Hackfest?",
+      answer:
+        "Ascol Hackfest is a student-led tech innovation event organized by the IT Club of Ascol Campus. It's a 24-48 hour hackathon where students from various colleges come together to brainstorm, design, and build creative solutions to real-world problems using technology. The event fosters learning, collaboration, and problem-solving skills among participants while being mentored by industry professionals and evaluated by expert judges.",
+      icon: <Database className="size-4" />,
+      image: "/team-2024.jpg",
+      alt: "Hackfest overview illustration",
+    },
+    {
+      key: "item-2",
+      question: "Who can participate?",
+      answer:
+        "Ascol Hackfest is open to all students, developers, designers, and tech enthusiasts regardless of their academic background or skill level. Whether you're a beginner looking to learn or an experienced coder aiming to compete, you're welcome! Participants can register as teams or individuals, and we’ll help solo participants find a team if needed.",
+      icon: <Fingerprint className="size-4" />,
+      image: "/participation.jpeg",
+      alt: "Participants discussion illustration",
+    },
+    {
+      key: "item-3",
+      question: "Is there a registration fee?",
+      answer:
+        "No, participation in Ascol Hackfest is absolutely free. The event is funded through sponsorships and organized by passionate volunteers, so you don’t have to worry about any hidden costs. All you need is enthusiasm, a laptop, and a drive to innovate!",
+      icon: <IdCard className="size-4" />,
+      image: "/hackfest-registration-2024.jpeg",
+      alt: "Free registration image",
+    },
+    {
+      key: "item-4",
+      question: "What do winners get?",
+      answer:
+        "Winners receive exciting tech gadgets, cash prizes, certificates, and goodies from our sponsors. Beyond material rewards, winners also get networking opportunities, mentorship access, and potential internship or job offers from partner organizations. It's a great platform to get noticed by the tech community.",
+      icon: <ChartBarIncreasingIcon className="size-4" />,
+      image: "/hackfest-2024-price.jpeg",
+      alt: "Based on hackfest organized previously here are the pricing.",
+    },
+  ];
 
-  const images = {
-    "item-1": {
-      image: "/charts.png",
-      alt: "Database visualization",
-    },
-    "item-2": {
-      image: "/music.png",
-      alt: "Security authentication",
-    },
-    "item-3": {
-      image: "/mail2.png",
-      alt: "Identity management",
-    },
-    "item-4": {
-      image: "/payments.png",
-      alt: "Analytics dashboard",
-    },
-  };
+  const [activeItem, setActiveItem] = useState<string>(faqItems[0].key);
+
+  const activeImage = faqItems.find((item) => item.key === activeItem);
 
   return (
-    <section className="relative py-12 md:py-20 lg:py-32">
+    <section id="faqs" className="relative py-12 md:py-20 lg:py-32">
       <CrossLines />
       <div className="bg-linear-to-b absolute inset-0 -z-10 sm:inset-6 sm:rounded-b-3xl dark:block dark:to-[color-mix(in_oklab,var(--color-zinc-900)_75%,var(--color-background))]"></div>
-      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16 lg:space-y-20 dark:[--color-border:color-mix(in_oklab,var(--color-white)_10%,transparent)]">
+      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16 lg:space-y-20">
         <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center">
           <h2 className="text-balance text-4xl font-semibold lg:text-6xl">
-            Lorem ipsum dolor sit.
+            Frequently Asked Questions
           </h2>
-          <p className="flex shrink">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ab
-            eligendi quae fuga. Impedit saepe quae rem, dolore ipsum eaque porro
-            accusantium eos. Rem totam nostrum, repellendus delectus deleniti
-            ipsam!
+          <p>
+            Got questions about Ascol Hackfest? We've got answers to help you
+            get started.
           </p>
         </div>
 
@@ -61,59 +87,20 @@ export default function FAQ_AD() {
           <Accordion
             type="single"
             value={activeItem}
-            onValueChange={(value) => setActiveItem(value as ImageKey)}
+            onValueChange={(value) => setActiveItem(value)}
             className="w-full"
           >
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <Database className="size-4" />
-                  Lorem, ipsum.
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequuntur, quisquam! Consequuntur quia eveniet nulla dolore
-                maiores libero velit sed in.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <Fingerprint className="size-4" />
-                  Lorem, ipsum.
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-                similique eveniet perspiciatis iste ut necessitatibus
-                consectetur id quam incidunt sed?
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <IdCard className="size-4" />
-                  Lorem, ipsum.
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                cupiditate rerum magnam at, dolorem laboriosam.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>
-                <div className="flex items-center gap-2 text-base">
-                  <ChartBarIncreasingIcon className="size-4" />
-                  Lorem, ipsum dolor.
-                </div>
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                iure ipsam a soluta asperiores maiores.
-              </AccordionContent>
-            </AccordionItem>
+            {faqItems.map((item) => (
+              <AccordionItem key={item.key} value={item.key}>
+                <AccordionTrigger>
+                  <div className="flex items-center gap-2 text-base">
+                    {item.icon}
+                    {item.question}
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>{item.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
 
           <div className="bg-background relative flex overflow-hidden rounded-3xl border p-2">
@@ -121,20 +108,22 @@ export default function FAQ_AD() {
             <div className="aspect-76/59 bg-background relative w-[calc(3/4*100%+3rem)] rounded-2xl">
               <AnimatePresence mode="wait">
                 <motion.div
-                  key={`${activeItem}-id`}
+                  key={activeItem}
                   initial={{ opacity: 0, y: 6, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 6, scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                   className="size-full overflow-hidden rounded-2xl border bg-zinc-900 shadow-md"
                 >
-                  <Image
-                    src={images[activeItem].image}
-                    className="size-full object-cover object-left-top dark:mix-blend-lighten"
-                    alt={images[activeItem].alt}
-                    width={1207}
-                    height={929}
-                  />
+                  {activeImage && (
+                    <Image
+                      src={activeImage.image}
+                      className="size-full object-cover object-left-top dark:mix-blend-lighten"
+                      alt={activeImage.alt}
+                      width={1207}
+                      height={929}
+                    />
+                  )}
                 </motion.div>
               </AnimatePresence>
             </div>

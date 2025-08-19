@@ -30,7 +30,7 @@ const links = [
 
 export function FooterSection() {
   return (
-    <footer className="relative py-16 md:py-16">
+    <footer id="footer" className="relative py-16 md:py-16">
       <CrossLines />
       <div className="mx-auto max-w-5xl px-6">
         <Link href="/" aria-label="go home" className="mx-auto block size-fit">

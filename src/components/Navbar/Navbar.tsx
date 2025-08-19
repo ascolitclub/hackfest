@@ -8,13 +8,12 @@ import { ThemeSwitcher } from "../Switch";
 import Image from "next/image";
 
 const menuItems = [
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Schedule", href: "#schedule" },
-  { name: "Tracks", href: "#tracks" },
-  { name: "Prizes", href: "#prizes" },
   { name: "Sponsors", href: "#sponsors" },
   { name: "FAQs", href: "#faqs" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#footer" },
 ];
 
 export const Navbar = () => {
@@ -98,7 +97,7 @@ export const Navbar = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+              <div className=" flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <ThemeSwitcher />
               </div>
             </div>

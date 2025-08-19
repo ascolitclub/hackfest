@@ -40,6 +40,7 @@ export function ThemeSwitcher() {
       <Switch
         id={id}
         checked={!isDark}
+        disabled
         onCheckedChange={toggleTheme}
         aria-labelledby={`${id}-off ${id}-on`}
         aria-label="Toggle between dark and light mode"

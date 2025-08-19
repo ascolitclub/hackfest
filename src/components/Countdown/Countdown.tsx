@@ -48,7 +48,8 @@ export function Countdown() {
     const timer = setInterval(calculateTimeLeft, 1000);
 
     return () => clearInterval(timer);
-  }, [eventDate]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleShare = () => {
     if (navigator.share) {
@@ -69,7 +70,7 @@ export function Countdown() {
   }
 
   return (
-    <div className="relative bg-background py-16 lg:py-36">
+    <div id="schedule" className="relative bg-background py-16 lg:py-36">
       <CrossLines />
       {/* Hero Section with Countdown */}
       <div
@@ -100,7 +101,7 @@ export function Countdown() {
               { label: "Hours", value: timeLeft.hours },
               { label: "Minutes", value: timeLeft.minutes },
               { label: "Seconds", value: timeLeft.seconds },
-            ].map((item, index) => (
+            ].map((item) => (
               <Card
                 key={item.label}
                 className="bg-card/80 backdrop-blur-sm border-border/50 hover:bg-card transition-colors"

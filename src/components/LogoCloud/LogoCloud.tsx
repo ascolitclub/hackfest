@@ -3,7 +3,7 @@ import { CrossLines } from "../Lines/CrossLines";
 
 export default function LogoCloud() {
   return (
-    <section className="relative bg-background py-16 lg:py-36">
+    <section id="sponsors" className="relative bg-background py-16 lg:py-36">
       <CrossLines />
       <div className="relative mx-auto max-w-5xl px-6">
         <h2 className="text-center text-xl font-medium">
