@@ -75,7 +75,7 @@ function Navbar({ hideNavbar, stickyNavbar = true }: Props) {
                             {menuItem.title}
                           </NavigationMenuTrigger>
                           <NavigationMenuContent>
-                            {menuItem.dropdown}
+                            {/* {menuItem.dropdown} */}
                           </NavigationMenuContent>
                         </NavigationMenuItem>
                       ) : (

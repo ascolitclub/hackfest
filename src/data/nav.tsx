@@ -15,6 +15,7 @@ export const getMenu = (): Props => ({
       title: "Product",
       url: "/product",
       hasDropdown: false,
+      dropdown: "",
     },
   ],
 });

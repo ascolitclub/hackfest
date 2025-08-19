@@ -15,7 +15,7 @@ const MenuItem = React.forwardRef<
     {
       className,
       href,
-      hoverColor = "foreground",
+      // hoverColor = "foreground",
       description,
       children,
       icon,
@@ -26,7 +26,7 @@ const MenuItem = React.forwardRef<
   ) => {
     return (
       <Link
-        href={href}
+        href={href as string}
         ref={ref}
         className={cn(
           "group/menu-item flex items-center text-foreground text-sm hover:text-foreground select-none gap-3 rounded-md p-2 leading-none no-underline outline-none focus-visible:ring-2",
