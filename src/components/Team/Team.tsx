@@ -1,48 +1,49 @@
-import Link from "next/link";
+/* eslint-disable @next/next/no-img-element */
+
 import { CrossLines } from "../Lines/CrossLines";
 
 const members = [
   {
-    name: "Liam Brown",
-    role: "Founder - CEO",
-    avatar: "/1.jpg",
+    name: "BIbek Koirala",
+    role: "Treasurer, FSU",
+    avatar: "/Bibek.jpg",
     link: "#",
   },
   {
-    name: "Elijah Jones",
-    role: "Co-Founder - CTO",
-    avatar: "/1.jpg",
+    name: "Sadhana Sigdel",
+    role: "Member, FSU",
+    avatar: "/Sadhana.jpg",
     link: "#",
   },
   {
-    name: "Isabella Garcia",
-    role: "Sales Manager",
-    avatar: "/1.jpg",
+    name: "Sijan Panta",
+    role: "Member, FSU",
+    avatar: "/Sijan.jpg",
     link: "#",
   },
   {
-    name: "Henry Lee",
-    role: "UX Engeneer",
-    avatar: "/1.jpg",
+    name: "Sandesh Khadka",
+    role: "President, Ascol It Club",
+    avatar: "/Sandesh.jpg",
     link: "#",
   },
   {
-    name: "Ava Williams",
-    role: "Interaction Designer",
-    avatar: "/1.jpg",
+    name: "Rishab Khakurel",
+    role: "PR-Manager, Ascol It Club",
+    avatar: "/Rishab.jpg",
     link: "#",
   },
   {
-    name: "Olivia Miller",
-    role: "Visual Designer",
-    avatar: "/1.jpg",
+    name: "Kushal Dhakal",
+    role: "Treasurer, Ascol It Club",
+    avatar: "/Kushal.png",
     link: "#",
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="relative py-16 md:py-32 dark:bg-transparent">
+    <section id="team" className="relative py-16 md:py-32 dark:bg-transparent">
       <CrossLines />
       <div className="mx-auto max-w-5xl border-t px-6">
         <span className="text-caption -ml-6 -mt-3.5 block w-max bg-primary rounded-lg text-white font-medium px-6">
@@ -50,13 +51,15 @@ export default function TeamSection() {
         </span>
         <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
           <div className="sm:w-2/5">
-            <h2 className="text-3xl font-bold sm:text-4xl">Our dream team</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl">
+              Our Organizing Committee
+            </h2>
           </div>
           <div className="mt-6 sm:mt-0">
             <p>
-              During the working process, we perform regular fitting with the
-              client because he is the only person who can feel whether a new
-              suit fits or not.
+              This event is made possible by the tireless efforts of our
+              organizing committee, a diverse group united by the purpose of
+              creating the best possible experience for every participant.
             </p>
           </div>
         </div>
@@ -82,13 +85,13 @@ export default function TeamSection() {
                     <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                       {member.role}
                     </span>
-                    <Link
+                    {/* <Link
                       href={member.link}
                       className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100"
                     >
                       {" "}
                       Linktree
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

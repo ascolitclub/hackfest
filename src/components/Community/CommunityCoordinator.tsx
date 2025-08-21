@@ -2,51 +2,53 @@ import { CrossLines } from "../Lines/CrossLines";
 
 export function HackFestCommunityCoordinator() {
   return (
-    <section className="relative py-16 md:py-32">
+    <section id="about" className="relative py-16 md:py-32">
       <CrossLines />
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
         <div className="relative z-10 max-w-xl space-y-6">
           <h2 className="text-4xl font-medium lg:text-5xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing..
+            Ascol Hackfest 2025: Innovate, Collaborate, Create
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente.
-            <span className="font-medium">Lorem ipsum dolor sit amet.</span> —
-            Lorem, ipsum dolor.
+            Whether you&apos;re a seasoned developer, a curious designer, or a
+            tech enthusiast looking to learn, our hackathon is the perfect
+            environment to turn your ideas into reality.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
           <div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-              eum soluta nostrum repellat, eligendi quis.
+              You&apos;ll have access to expert mentors, workshops on
+              cutting-edge technologies, and a vibrant community of fellow
+              hackers.
             </p>
             <div className="mb-12 mt-12 grid grid-cols-2 gap-2 md:mb-0">
               <div className="space-y-4">
                 <div className="bg-linear-to-r from-zinc-950 to-zinc-600 bg-clip-text text-5xl font-bold text-transparent dark:from-white dark:to-zinc-800">
-                  +1200
+                  +250
                 </div>
-                <p>Stars on GitHub</p>
+                <p>Applicants</p>
               </div>
               <div className="space-y-4">
                 <div className="bg-linear-to-r from-zinc-950 to-zinc-600 bg-clip-text text-5xl font-bold text-transparent dark:from-white dark:to-zinc-800">
-                  +500
+                  +20
                 </div>
-                <p>Powered Apps</p>
+                <p>Districts</p>
               </div>
             </div>
           </div>
           <div className="relative">
             <blockquote className="border-l-4 pl-4">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequuntur velit beatae quo odit? Dolore aliquid nostrum
-                voluptatem provident. Eaque in facilis accusantium laboriosam
-                ullam? Harum optio consectetur distinctio voluptates accusamus?
+                &quot;The ASCOL HACKFEST is a true showcase of our community&apos;s
+                innovative spirit. I am consistently amazed by the creativity
+                and skill of our participants and am confident that their
+                projects will make a lasting impact. This event is a powerful
+                demonstration of how collaboration can drive real change.&quot;
               </p>
 
               <div className="mt-6 space-y-3">
-                <cite className="block font-medium">John Doe, CEO</cite>
+                <cite className="block font-medium">Sandesh Khadka, President</cite>
                 {/* <img
                   className="h-5 w-fit dark:invert"
                   src=""

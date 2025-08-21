@@ -54,8 +54,8 @@ export function Countdown() {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: "TechSummit 2025 - Don't Miss Out!",
-        text: "Join us for the biggest tech event of the year!",
+        title: "Ascol Hackfest 2025 - Don't Miss Out!",
+        text: "Join us for the biggest event of the year!",
         url: window.location.href,
       });
     } else {
@@ -120,7 +120,7 @@ export function Countdown() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg">Get Your Tickets Now</Button>
+            <Button size="lg">Register Now</Button>
             <Button variant="outline" size="lg" onClick={handleShare}>
               <Share2 className="w-5 h-5 mr-2" />
               Share Event

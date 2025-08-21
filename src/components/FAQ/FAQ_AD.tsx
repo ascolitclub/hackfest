@@ -41,7 +41,7 @@ export default function FAQ_AD() {
       answer:
         "Ascol Hackfest is open to all students, developers, designers, and tech enthusiasts regardless of their academic background or skill level. Whether you're a beginner looking to learn or an experienced coder aiming to compete, you're welcome! Participants can register as teams or individuals, and we’ll help solo participants find a team if needed.",
       icon: <Fingerprint className="size-4" />,
-      image: "/participation.jpeg",
+      image: "/ascolhackfest.jpg",
       alt: "Participants discussion illustration",
     },
     {
@@ -59,7 +59,7 @@ export default function FAQ_AD() {
       answer:
         "Winners receive exciting tech gadgets, cash prizes, certificates, and goodies from our sponsors. Beyond material rewards, winners also get networking opportunities, mentorship access, and potential internship or job offers from partner organizations. It's a great platform to get noticed by the tech community.",
       icon: <ChartBarIncreasingIcon className="size-4" />,
-      image: "/hackfest-2024-price.jpeg",
+      image: "/hackfest-hero.jpg",
       alt: "Based on hackfest organized previously here are the pricing.",
     },
   ];
@@ -78,7 +78,7 @@ export default function FAQ_AD() {
             Frequently Asked Questions
           </h2>
           <p>
-            Got questions about Ascol Hackfest? We've got answers to help you
+            Got questions about Ascol Hackfest? We&apos;ve got answers to help you
             get started.
           </p>
         </div>
