@@ -64,12 +64,10 @@ export function HeroSection() {
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 {/* <AnimatedGroup variants={transitionVariants}> */}
                 <Link
-                  href="#link"
+                  href="#schedule"
                   className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                 >
-                  <span className="text-foreground text-sm">
-                    Introducing Support for AI Models
-                  </span>
+                  <span className="text-foreground text-sm">The Countdown</span>
                   <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                   <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -84,12 +82,11 @@ export function HeroSection() {
                   </div>
                 </Link>
 
-                <h1 className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                  Modern Solutions for Customer Engagement
+                <h1 className="mt-8 text-balance text-6xl md:text-4xl lg:mt-16">
+                  Ascol Campus Presents
                 </h1>
-                <p className="mx-auto mt-8 max-w-2xl text-balance text-lg">
-                  Highly customizable components for building modern websites
-                  and applications that look and feel the way you mean it.
+                <p className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                  ASCOL HACKFEST 2025
                 </p>
 
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
@@ -103,7 +100,7 @@ export function HeroSection() {
                       className="rounded-xl px-5 text-base"
                     >
                       <Link href="#link">
-                        <span className="text-nowrap">Start Building</span>
+                        <span className="text-nowrap">Register Now</span>
                       </Link>
                     </Button>
                   </div>
@@ -111,12 +108,17 @@ export function HeroSection() {
                     key={2}
                     asChild
                     size="lg"
-                    variant="ghost"
+                    variant="secondary"
                     className="h-10.5 rounded-xl px-5"
                   >
-                    <Link href="#link">
-                      <span className="text-nowrap">Request a demo</span>
-                    </Link>
+                    <a
+                      href="https://www.ascolitclub.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    
+                    >
+                      <span className="text-nowrap">About Ascol IT Club</span>
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -142,8 +144,8 @@ export function HeroSection() {
               />
               <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                 <Image
-                  className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-                  src="/hackfest-hero.jpg"
+                  className="bg-background  relative hidden rounded-2xl dark:block"
+                  src="/ascolitclub.jpg"
                   alt="app screen"
                   width="2700"
                   height="1440"

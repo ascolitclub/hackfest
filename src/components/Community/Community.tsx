@@ -15,7 +15,7 @@ export function CommunitySection() {
             Built by the Community <br /> for the Community
           </h2>
           <p className="mt-6">
-            Harum quae dolore orrupti aut temporibus ariatur.
+           Meet The Team Responsible
           </p>
 
           <CurvedLine
@@ -37,7 +37,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Aayusha.jpeg"
               loading="lazy"
               width={120}
               height={120}
@@ -51,7 +51,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Ajita.jpg"
               loading="lazy"
               width={120}
               height={120}
@@ -65,7 +65,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Rashmi.jpg"
               loading="lazy"
               width={120}
               height={120}
@@ -79,7 +79,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Ritika.jpg"
               loading="lazy"
               width={120}
               height={120}
@@ -93,7 +93,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Roshan.jpg"
               loading="lazy"
               width={120}
               height={120}
@@ -107,7 +107,7 @@ export function CommunitySection() {
           >
             <Image
               alt="John Doe"
-              src="/1.jpg"
+              src="/Saroj.jpg"
               loading="lazy"
               width={120}
               height={120}
@@ -122,7 +122,7 @@ export function CommunitySection() {
             <Image
               alt="John Doe"
               loading="lazy"
-              src="/1.jpg"
+              src="/Shreejit.jpg"
               width={120}
               height={120}
             />
@@ -136,7 +136,7 @@ export function CommunitySection() {
             <Image
               alt="John Doe"
               loading="lazy"
-              src="/1.jpg"
+              src="/Susma.jpg"
               width={120}
               height={120}
             />
@@ -150,35 +150,7 @@ export function CommunitySection() {
             <Image
               alt="John Doe"
               loading="lazy"
-              src="/1.jpg"
-              width={120}
-              height={120}
-            />
-          </Link>
-          <Link
-            href="/"
-            target="_blank"
-            title="Méschac Irung"
-            className="size-16 rounded-full border *:size-full *:rounded-full *:object-cover"
-          >
-            <Image
-              alt="John Doe"
-              loading="lazy"
-              src="/1.jpg"
-              width={120}
-              height={120}
-            />
-          </Link>
-          <Link
-            href="/"
-            target="_blank"
-            title="Méschac Irung"
-            className="size-16 rounded-full border *:size-full *:rounded-full *:object-cover"
-          >
-            <Image
-              alt="John Doe"
-              loading="lazy"
-              src="/1.jpg"
+              src="/Unique.JPG"
               width={120}
               height={120}
             />

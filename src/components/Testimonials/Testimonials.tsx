@@ -5,16 +5,17 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-16 md:py-32">
+    <section id="testimonial" className="relative py-16 md:py-32">
       <CrossLines />
       <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
         <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
           <h2 className="text-4xl font-medium lg:text-5xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
+            ASCOL Hackfest 2024 TESTIMONIAL
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            voluptates nostrum dolores alias voluptatem hic.
+            ASCOL Hackfest 2024 brought together innovators, developers, and
+            dreamers to solve real-world challenges through creativity and
+            technology.
           </p>
         </div>
 
@@ -32,10 +33,10 @@ export default function Testimonials() {
             <CardContent>
               <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                 <p className="text-xl font-medium">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium, similique temporibus! Cumque dignissimos cum,
-                  quia eos totam a maxime. Quis non dolore voluptatem natus
-                  distinctio necessitatibus neque ut, facere fugiat.
+                  “ASCOL Hackfest gave me the chance to collaborate with
+                  brilliant minds and turn an idea into a real solution. The
+                  energy, the mentorship, and the community spirit made it an
+                  unforgettable experience.”
                 </p>
 
                 <div className="grid grid-cols-[auto_1fr] items-center gap-3">
@@ -47,12 +48,12 @@ export default function Testimonials() {
                       width="400"
                       loading="lazy"
                     />
-                    <AvatarFallback>ST</AvatarFallback>
+                    <AvatarFallback>RN</AvatarFallback>
                   </Avatar>
 
                   <div>
                     <cite className="text-sm font-medium">
-                      Shekinah Tshiokufila
+                      Rupesh Neupane
                     </cite>
                     <span className="text-muted-foreground block text-sm">
                       Software Ingineer
@@ -66,8 +67,7 @@ export default function Testimonials() {
             <CardContent className="h-full pt-6">
               <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                 <p className="text-xl font-medium">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum ab reiciendis possimus, velit voluptatem quos.
+                  “It’s more than just coding. Hackfest taught me teamwork, problem-solving under pressure, and how to think outside the box. Highly recommend it to every student!”
                 </p>
 
                 <div className="grid grid-cols-[auto_1fr] items-center gap-3">
@@ -79,10 +79,10 @@ export default function Testimonials() {
                       width="400"
                       loading="lazy"
                     />
-                    <AvatarFallback>JY</AvatarFallback>
+                    <AvatarFallback>BC</AvatarFallback>
                   </Avatar>
                   <div>
-                    <cite className="text-sm font-medium">Jonathan Yombo</cite>
+                    <cite className="text-sm font-medium">Bikash Chhetri</cite>
                     <span className="text-muted-foreground block text-sm">
                       Software Ingineer
                     </span>
@@ -95,8 +95,7 @@ export default function Testimonials() {
             <CardContent className="h-full pt-6">
               <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi, earum.
+                 “Hackfest was the platform where I pushed my limits. From brainstorming to pitching, every moment was a lesson in innovation.”
                 </p>
 
                 <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
@@ -108,14 +107,14 @@ export default function Testimonials() {
                       width="400"
                       loading="lazy"
                     />
-                    <AvatarFallback>YF</AvatarFallback>
+                    <AvatarFallback>SG</AvatarFallback>
                   </Avatar>
                   <div>
                     <cite className="text-sm font-medium">
-                      Yucel Faruksahan
+                     Sandip Gyawali
                     </cite>
                     <span className="text-muted-foreground block text-sm">
-                      Creator, Awww
+                      Creator, Flutter Developer
                     </span>
                   </div>
                 </div>
@@ -126,8 +125,7 @@ export default function Testimonials() {
             <CardContent className="h-full pt-6">
               <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, perspiciatis.
+                 “Being part of Hackfest means being part of a family of change-makers. The network and skills I gained still help me today.”
                 </p>
 
                 <div className="grid grid-cols-[auto_1fr] gap-3">
@@ -139,10 +137,10 @@ export default function Testimonials() {
                       width="400"
                       loading="lazy"
                     />
-                    <AvatarFallback>YF</AvatarFallback>
+                    <AvatarFallback>NK</AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="text-sm font-medium">Rodrigo Aguilar</p>
+                    <p className="text-sm font-medium">Nidina Koirala</p>
                     <span className="text-muted-foreground block text-sm">
                       Creator, TailwindAwesome
                     </span>
