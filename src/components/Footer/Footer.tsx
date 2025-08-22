@@ -116,7 +116,7 @@ export function FooterSection() {
         </div>
          <div className="my-4 flex flex-col items-center gap-2 text-sm text-muted-foreground">
           <span>📞 +977-9769777828    </span>
-          <span>✉️ ascolitclub2080@google.com</span>
+          <span>✉️ ascolitclub2080@gmail.com</span>
         </div>
         <span className="text-muted-foreground block text-center text-sm">
           {" "}

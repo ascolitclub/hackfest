@@ -82,10 +82,10 @@ export function HeroSection() {
                   </div>
                 </Link>
 
-                <h1 className="mt-8 text-balance text-6xl md:text-4xl lg:mt-16">
+                <h1 className="mt-8 text-balance text-2xl md:text-4xl lg:mt-16">
                   Ascol Campus Presents
                 </h1>
-                <p className="mt-8 text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+                <p className="mt-8 text-balance text-3xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
                   ASCOL HACKFEST 2025
                 </p>
 

@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
-import { ThemeSwitcher } from "../Switch";
+// import { ThemeSwitcher } from "../Switch";
 import Image from "next/image";
 
 const menuItems = [
@@ -40,8 +40,8 @@ export const Navbar = () => {
         )}
       >
         <div className="mx-auto max-w-5xl px-6 transition-all duration-300">
-          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-2">
-            <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
+          <div className="relative flex flex-wrap items-center justify-center gap-12 py-3 lg:gap-0 lg:py-2">
+            <div className="flex w-full items-center justify-between gap-16 lg:w-auto">
               <Link
                 href="/"
                 aria-label="home"
@@ -67,7 +67,7 @@ export const Navbar = () => {
               </button>
 
               <div className="hidden lg:block">
-                <ul className="flex gap-8 text-sm">
+                <ul className="flex gap-8  text-sm">
                   {menuItems.map((item, index) => (
                     <li key={index}>
                       <Link
@@ -82,7 +82,7 @@ export const Navbar = () => {
               </div>
             </div>
 
-            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 dark:lg:bg-transparent">
+            <div className="bg-background  in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 dark:lg:bg-transparent">
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
@@ -97,9 +97,7 @@ export const Navbar = () => {
                   ))}
                 </ul>
               </div>
-              <div className=" flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <ThemeSwitcher />
-              </div>
+             
             </div>
           </div>
         </div>
