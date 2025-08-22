@@ -1,10 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
-import { HashTag } from "../Doodles/HashTag";
-import { Spiral } from "../Doodles/Spiral";
+
 // import { TextEffect } from "@/components/motion";
 // import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
 
@@ -21,44 +20,16 @@ export function HeroSection() {
           <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
         </div>
         <section>
+          <Image
+            src="/hackfest-main-img.jpg"
+            alt="background"
+            className="absolute inset-x-0 md:top-56 -z-20 lg:top-32 block"
+            width="3276"
+            decoding="async"
+            loading="eager"
+            height="4500"
+          />
           <div className="relative pt-24 md:pt-36">
-            {/* <AnimatedGroup
-              variants={{
-                container: {
-                  visible: {
-                    transition: {
-                      delayChildren: 1,
-                    },
-                  },
-                },
-                item: {
-                  hidden: {
-                    opacity: 0,
-                    y: 20,
-                  },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      bounce: 0.3,
-                      duration: 2,
-                    },
-                  },
-                },
-              }}
-              className="absolute inset-0 -z-20"
-            > */}
-            <Image
-              src="/hackfest-main-img.jpg"
-              alt="background"
-              className="absolute inset-x-0 top-56 -z-20 lg:top-32 block"
-              width="3276"
-              decoding="async"
-              loading="eager"
-              height="4095"
-            />
-            {/* </AnimatedGroup> */}
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
@@ -115,7 +86,6 @@ export function HeroSection() {
                       href="https://www.ascolitclub.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                    
                     >
                       <span className="text-nowrap">About Ascol IT Club</span>
                     </a>
@@ -137,14 +107,14 @@ export function HeroSection() {
                 ...transitionVariants,
               }}
             > */}
-            <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+            <div className="relative w-[100%] -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
               <div
                 aria-hidden
                 className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
               />
               <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                 <Image
-                  className="bg-background  relative hidden rounded-2xl dark:block"
+                  className="bg-background rounded-2xl dark:block"
                   src="/ascolitclub.jpg"
                   alt="app screen"
                   width="2700"
@@ -152,33 +122,8 @@ export function HeroSection() {
                 />
               </div>
             </div>
-            {/* </AnimatedGroup> */}
           </div>
         </section>
-        <section className="bg-background pb-16 pt-16">
-          <div className="group relative m-auto max-w-5xl px-6">
-            <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-              <Link
-                href="/"
-                className="block text-sm duration-150 hover:opacity-75"
-              >
-                <span> Meet Our Customers</span>
-
-                <ChevronRight className="ml-1 inline-block size-3" />
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <HashTag
-          size={130}
-          className="hidden lg:block absolute top-[120px] right-0 text-primary"
-        />
-
-        <Spiral
-          size={120}
-          className="hidden lg:block absolute top-[296px] left-4 text-foreground"
-        />
       </main>
     </>
   );
