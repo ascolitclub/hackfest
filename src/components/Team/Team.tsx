@@ -4,7 +4,25 @@ import { CrossLines } from "../Lines/CrossLines";
 
 const members = [
   {
-    name: "BIbek Koirala",
+    name: "Dr. Vijay Kumar Jha",
+    role: "Asst. Campus Chief, ASCOL",
+    avatar: "/Vijay.jpg",
+    link: "#",
+  },
+  {
+    name: "Rabindra S.Mahat",
+    role: "Student Welfare, ASCOL",
+    avatar: "/Rabindra.jpeg",
+    link: "#",
+  },
+  {
+    name: "Akkal Bista",
+    role: "Head Techincal Assistant-IT, TU",
+    avatar: "/Akkal.jpeg",
+    link: "#",
+  },
+  {
+    name: "Bibek Koirala",
     role: "Treasurer, FSU",
     avatar: "/Bibek.jpg",
     link: "#",
