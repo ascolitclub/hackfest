@@ -38,28 +38,27 @@ export function HeroSection() {
                 <Link
                   target="blank"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeWfX81syG9qM2ITpHlgLVZQJNELwFqZO077QGz0VTun6V7cA/viewform"
-                  className=" bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                  className="relative mx-auto flex w-fit items-center gap-4 rounded-full p-[2px] overflow-hidden"
                 >
-                  <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                      <span className="text-foreground text-sm mr-2">
-                        Register Now
-                      </span>
-                      <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+                  {/* Rotating gradient border */}
+                  <span className="absolute inset-0 rounded-full bg-[conic-gradient(from_0deg,theme(colors.pink.500),theme(colors.purple.500),theme(colors.blue.500),theme(colors.pink.500))] animate-spin-slow"></span>
 
-                      <div className="bg-background group-hover:bg-muted ml-2 size-6 overflow-hidden rounded-full duration-500">
-                        <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                          <span className="flex size-6">
-                            <ArrowRight className="m-auto size-3" />
-                          </span>
-                          <span className="flex size-6">
-                            <ArrowRight className="m-auto size-3" />
-                          </span>
-                        </div>
+                  {/* Inner button */}
+                  <span className="relative z-10 flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 shadow-md shadow-zinc-950/5 transition-colors text-sm text-white backdrop-blur-3xl">
+                    <span className="mr-2">Register Now</span>
+                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+
+                    <div className="bg-background group-hover:bg-muted ml-2 size-6 overflow-hidden rounded-full duration-500">
+                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                        <span className="flex size-6">
+                          <ArrowRight className="m-auto size-3" />
+                        </span>
+                        <span className="flex size-6">
+                          <ArrowRight className="m-auto size-3" />
+                        </span>
                       </div>
-                    </span>
-                  </button>
+                    </div>
+                  </span>
                 </Link>
 
                 <h1 className="mt-8 text-balance text-2xl md:text-4xl lg:mt-16">
