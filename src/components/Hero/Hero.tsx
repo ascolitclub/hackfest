@@ -35,10 +35,11 @@ export function HeroSection() {
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                 {/* <AnimatedGroup variants={transitionVariants}> */}
                 <Link
-                  href="#schedule"
+                target="blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeWfX81syG9qM2ITpHlgLVZQJNELwFqZO077QGz0VTun6V7cA/viewform"
                   className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                 >
-                  <span className="text-foreground text-sm">The Countdown</span>
+                  <span className="text-foreground text-sm">Register Now</span>
                   <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                   <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -59,38 +60,6 @@ export function HeroSection() {
                 <p className="mt-8 text-balance text-3xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
                   ASCOL HACKFEST 2025
                 </p>
-
-                <div className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
-                  <div
-                    key={1}
-                    className="rounded-[calc(var(--radius-xl)+0.125rem)] p-0.5"
-                  >
-                    <Button
-                      asChild
-                      size="lg"
-                      className="rounded-xl px-5 text-base"
-                    >
-                      <Link href="#link">
-                        <span className="text-nowrap">Register Now</span>
-                      </Link>
-                    </Button>
-                  </div>
-                  <Button
-                    key={2}
-                    asChild
-                    size="lg"
-                    variant="secondary"
-                    className="h-10.5 rounded-xl px-5"
-                  >
-                    <a
-                      href="https://www.ascolitclub.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="text-nowrap">About Ascol IT Club</span>
-                    </a>
-                  </Button>
-                </div>
               </div>
             </div>
 
