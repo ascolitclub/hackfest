@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { Share2 } from "lucide-react";
 import { CrossLines } from "../Lines/CrossLines";
 import { Line } from "../Doodles/Line";
+import Link from "next/link";
 
 interface TimeLeft {
   days: number;
@@ -15,8 +16,8 @@ interface TimeLeft {
 
 export function Countdown() {
   // Set event date to 30 days from now for demo purposes
-  const eventDate = new Date();
-  eventDate.setDate(eventDate.getDate() + 30);
+  const eventDate = new Date("2025-09-18");
+  eventDate.setDate(eventDate.getDate());
   eventDate.setHours(19, 0, 0, 0); // 7:00 PM
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
@@ -120,7 +121,9 @@ export function Countdown() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeWfX81syG9qM2ITpHlgLVZQJNELwFqZO077QGz0VTun6V7cA/viewform">
             <Button size="lg">Register Now</Button>
+            </Link>
             <Button variant="outline" size="lg" onClick={handleShare}>
               <Share2 className="w-5 h-5 mr-2" />
               Share Event

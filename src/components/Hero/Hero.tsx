@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+
 import Image from "next/image";
+import { div } from "motion/react-client";
+import { button } from "motion/react-m";
 
 // import { TextEffect } from "@/components/motion";
 // import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
@@ -33,24 +35,31 @@ export function HeroSection() {
             <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                {/* <AnimatedGroup variants={transitionVariants}> */}
                 <Link
-                  href="#schedule"
-                  className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                  target="blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeWfX81syG9qM2ITpHlgLVZQJNELwFqZO077QGz0VTun6V7cA/viewform"
+                  className=" bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                 >
-                  <span className="text-foreground text-sm">The Countdown</span>
-                  <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+                  <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                      <span className="text-foreground text-sm mr-2">
+                        Register Now
+                      </span>
+                      <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
-                  <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                    <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                      <span className="flex size-6">
-                        <ArrowRight className="m-auto size-3" />
-                      </span>
-                      <span className="flex size-6">
-                        <ArrowRight className="m-auto size-3" />
-                      </span>
-                    </div>
-                  </div>
+                      <div className="bg-background group-hover:bg-muted ml-2 size-6 overflow-hidden rounded-full duration-500">
+                        <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                          <span className="flex size-6">
+                            <ArrowRight className="m-auto size-3" />
+                          </span>
+                          <span className="flex size-6">
+                            <ArrowRight className="m-auto size-3" />
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </button>
                 </Link>
 
                 <h1 className="mt-8 text-balance text-2xl md:text-4xl lg:mt-16">
@@ -60,7 +69,7 @@ export function HeroSection() {
                   ASCOL HACKFEST 2025
                 </p>
 
-                <div className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
+                {/* <div className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
                   <div
                     key={1}
                     className="rounded-[calc(var(--radius-xl)+0.125rem)] p-0.5"
@@ -90,7 +99,7 @@ export function HeroSection() {
                       <span className="text-nowrap">About Ascol IT Club</span>
                     </a>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
 
