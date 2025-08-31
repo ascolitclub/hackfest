@@ -50,7 +50,7 @@ export default function FAQ_AD() {
       answer:
         "No, participation in Ascol Hackfest is absolutely free. The event is funded through sponsorships and organized by passionate volunteers, so you don’t have to worry about any hidden costs. All you need is enthusiasm, a laptop, and a drive to innovate!",
       icon: <IdCard className="size-4" />,
-      image: "/hackfest-registration-2024.jpeg",
+      image: "/hackfest-registration-2025.jpg",
       alt: "Free registration image",
     },
     {
