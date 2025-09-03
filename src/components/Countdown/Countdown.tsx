@@ -163,7 +163,7 @@ export function Countdown() {
                 <div>
                   <h3 className="font-semibold text-card-foreground">Winner</h3>
                   <p className="text-muted-foreground text-lg font-medium">
-                    ₹ 1,00,000
+                    Rs 1,00,000
                   </p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export function Countdown() {
                     1st Runner-up
                   </h3>
                   <p className="text-muted-foreground text-lg font-medium">
-                    ₹ 50,000
+                    Rs 50,000
                   </p>
                 </div>
               </div>
